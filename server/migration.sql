@@ -2,11 +2,10 @@ DROP TABLE IF EXISTS test;
 
 CREATE TABLE test (
   id SERIAL,
-  description TEXT
+  youtube TEXT,
+  facebook TEXT
 );
 
-INSERT INTO test(description) VALUES('Do the dishes');
-INSERT INTO test(description) VALUES('Walk the dog');
-INSERT INTO test(description) VALUES('Sweep the floor');
-INSERT INTO test(description) VALUES('Do your homework');
-INSERT INTO test(description) VALUES('Beat Elden Ring');
+INSERT INTO test(youtube) VALUES('https://www.youtube.com/channel/UCJf_UQSeQ470ugV4GiFo3eA');
+INSERT INTO test(facebook) VALUES('https://www.facebook.com/LifeTreeBand');
+

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../../assets/logo.PNG";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { RiTwitterXLine, RiFacebookBoxLine } from "react-icons/ri";
@@ -10,7 +10,7 @@ export default function LogoHero() {
   const instagramURL = "https://www.instagram.com/your-instagram-profile";
   const facebookURL = "https://www.facebook.com/LifeTreeBand";
   const twitterURL = "https://twitter.com/your-twitter-profile";
-  const youtubeURL = "https://www.youtube.com/your-youtube-channel";
+  const youtubeURL = "https://www.youtube.com/channel/UCJf_UQSeQ470ugV4GiFo3eA";
 
   return (
     <div className="flex  w-full h-screen items-center bg-gradient-to-b from-gray-700 to-[#222222] justify-center p-0 ">

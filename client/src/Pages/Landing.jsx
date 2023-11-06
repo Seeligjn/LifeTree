@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../Components/Header";
 import LogoHero from "../Components/LogoHero";
 import VideoHero from "../Components/VideoHero";
