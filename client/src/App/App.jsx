@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Landing from "../Pages/Landing";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
+  const [data, setData] = useState([]); // State to store the data
+
+  useEffect(() => {
+    // Make an HTTP GET request to fetch data from the server
+    fetch("/api/test")
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
+  console.log(data);
+
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Landing />} />
+          <Route index element={<Landing data={data} />} />
         </Routes>
       </BrowserRouter>
     </div>

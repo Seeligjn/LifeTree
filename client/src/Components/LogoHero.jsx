@@ -5,12 +5,14 @@ import { RiTwitterXLine, RiFacebookBoxLine } from "react-icons/ri";
 import { AiOutlineYoutube } from "react-icons/ai";
 import TypeWriter from "./TypeWriter";
 
-export default function LogoHero() {
+export default function LogoHero({ data }) {
   // Define the URLs for each social media platform
   const instagramURL = "https://www.instagram.com/your-instagram-profile";
   const facebookURL = "https://www.facebook.com/LifeTreeBand";
   const twitterURL = "https://twitter.com/your-twitter-profile";
   const youtubeURL = "https://www.youtube.com/channel/UCJf_UQSeQ470ugV4GiFo3eA";
+
+  console.log("data from logo hero", data); //making sure backend is connected to frontend
 
   return (
     <div className="flex  w-full h-screen items-center bg-gradient-to-b from-gray-700 to-[#222222] justify-center p-0 ">

@@ -8,6 +8,8 @@ const PORT = process.env.PORT;
 const sql = postgres(process.env.DATABASE_URL);
 const app = express();
 
+console.log(`DATABASE_URL: ${process.env.DATABASE_URL}`);
+
 app.use(express.json());
 
 app.get("/api/test", (req, res) => {
