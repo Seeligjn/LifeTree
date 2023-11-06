@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { StrictMode, useEffect, useState } from "react";
 import Landing from "../Pages/Landing";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
