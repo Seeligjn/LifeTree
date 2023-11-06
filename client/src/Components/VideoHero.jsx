@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 
 export default function VideoHero() {
   return (
-    <div className="flex w-full justify-center drop-shadow-2xl">
+    <div className="flex w-full drop-shadow-2xl">
       <div
         className="player-wrapper"
         style={{ width: "100%", paddingTop: "56.25%" }}
