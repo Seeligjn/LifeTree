@@ -3,19 +3,23 @@ import logo from "../../../assets/logo.PNG";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { RiTwitterXLine, RiFacebookBoxLine } from "react-icons/ri";
 import { AiOutlineYoutube } from "react-icons/ai";
+import TypeWriter from "./TypeWriter";
 
 export default function LogoHero() {
   // Define the URLs for each social media platform
   const instagramURL = "https://www.instagram.com/your-instagram-profile";
-  const facebookURL = "https://www.facebook.com/your-facebook-page";
+  const facebookURL = "https://www.facebook.com/LifeTreeBand";
   const twitterURL = "https://twitter.com/your-twitter-profile";
   const youtubeURL = "https://www.youtube.com/your-youtube-channel";
 
   return (
-    <div className="flex w-full bg-[#222222] items-center justify-center">
-      <div className="max-w-full text-center items-center mt-10">
-        <img className="w-auto max-h-96 mx-auto mb-2" src={logo} alt="logo" />
-        <div className="flex items-center space-x-2 justify-center">
+    <div className="flex  w-full h-screen items-center bg-gradient-to-b from-gray-700 to-[#222222] justify-center p-0 ">
+      <div className="max-w-full text-center items-center ">
+        <img className="w-auto max-h-96 mx-auto" src={logo} alt="logo" />
+        <div className="p-2">
+          <TypeWriter />
+        </div>
+        <div className="flex mt-20 items-center space-x-2 justify-center">
           <a
             href={instagramURL}
             target="_blank"
