@@ -15,9 +15,9 @@ export default function LogoHero({ data }) {
   console.log("data from logo hero", data); //making sure backend is connected to frontend
 
   return (
-    <div className="flex w-full h-screen items-center bg-[#222222] justify-center p-0 ">
-      <div className="max-w-full text-center items-center ">
-        <img className="w-auto max-h-96 mx-auto" src={logo} alt="logo" />
+    <div className="flex w-full h-screen bg-[#222222] justify-center p-0 ">
+      <div className="max-w-full text-center ">
+        <img className="w-auto max-h-96 mx-auto mt-28" src={logo} alt="logo" />
         <div className="p-2">
           <TypeWriter />
         </div>
