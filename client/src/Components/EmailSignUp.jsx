@@ -2,7 +2,7 @@ import React from "react";
 
 export default function EmailSignUp() {
   return (
-    <div className="flex mt-5 bg-gray-300 bg-opacity-75">
+    <div className="flex  bg-gray-300 bg-opacity-75">
       <div className="w-full flex items-center h-[400px] max-w-md p-4 rounded-lg sm:p-6 md:p-8 mb-52 justify-center md:justify-start">
         <form className="space-y-6" action="#">
           <h5 className="text-5xl font-extrabold text-gray-800">
