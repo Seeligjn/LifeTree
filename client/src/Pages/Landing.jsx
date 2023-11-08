@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 import LogoHero from "../Components/LogoHero";
 import VideoHero from "../Components/VideoHero";
 import Footer from "../Components/Footer";
-import About from "../Components/About";
+import EmailSignUp from "../Components/EmailSignUp";
 
 export default function Landing({ data }) {
   return (
@@ -11,7 +11,7 @@ export default function Landing({ data }) {
       <Header />
       <LogoHero data={data} />
       <VideoHero />
-      <About />
+      <EmailSignUp />
       <Footer />
     </div>
   );

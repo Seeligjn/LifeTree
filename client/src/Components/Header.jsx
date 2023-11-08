@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import lifetree from "../../../assets/lifetree.PNG";
 import DropDown from "./DropDown.jsx";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -24,10 +25,10 @@ export default function Header() {
   }, []);
 
   return (
-    <nav className="flex max-w-full bg-[#141414] items-center p-0">
+    <nav className="flex max-w-full bg-[#141414] items-center justify-center p-0">
       <div className="max-w-screen-xl max-h-20 flex flex-wrap items-center justify-between p-4">
         <img
-          className="max-w-full max-h-10 ml-6 flex-2"
+          className="max-w-full max-h-10  flex-2"
           src={lifetree}
           alt="life tree"
         />
@@ -40,24 +41,26 @@ export default function Header() {
       ) : (
         // Render individual items when screen width is greater than the breakpoint
         <div className="flex flex-grow md:w-auto items-center">
-          <ul className="flex font-medium items-center ml-auto mr-10">
+          <ul className="flex font-medium items-center ml-auto mr-4">
             <li className="flex">
-              <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-gray-400 hover:border-b-2 hover:border-gray-400">
+              <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-yellow-500  hover:border-gray-400">
                 About
               </a>
-              <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-gray-400 hover:border-b-2 hover:border-gray-400">
-                Music
-              </a>
-              <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-gray-400 hover:border-b-2 hover:border-gray-400">
+              <Link to="/musicpage">
+                <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-yellow-500  hover:border-gray-400">
+                  Music
+                </a>
+              </Link>
+              <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-yellow-500  hover:border-gray-400">
                 Videos
               </a>
-              <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-gray-400 hover:border-b-2 hover:border-gray-400">
+              <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-yellow-500  hover:border-gray-400">
                 Merch
               </a>
-              <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-gray-400 hover:border-b-2 hover:border-gray-400">
+              <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-yellow-500  hover:border-gray-400">
                 Socials
               </a>
-              <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-gray-400 hover:border-b-2 hover:border-gray-400">
+              <a className="block py-2 pl-3 pr-4 text-gray-500 transition duration-300 hover:text-yellow-500  hover:border-gray-400">
                 Contact Us
               </a>
             </li>

@@ -7,10 +7,11 @@ export default function TypeWriter() {
       <Typewriter
         onInit={(typewriter) => {
           typewriter
-            .typeString("Welcome to the start of something great...")
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString("We Are LifeTree")
+            .typeString("Welcome...")
+            .pauseFor(1000)
+            .deleteChars(8)
+            .changeDeleteSpeed(1)
+            .typeString(" Are LifeTree")
             .start();
         }}
       />

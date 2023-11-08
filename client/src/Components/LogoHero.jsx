@@ -15,18 +15,18 @@ export default function LogoHero({ data }) {
   console.log("data from logo hero", data); //making sure backend is connected to frontend
 
   return (
-    <div className="flex  w-full h-screen items-center bg-gradient-to-b from-gray-700 to-[#222222] justify-center p-0 ">
+    <div className="flex w-full h-screen items-center bg-[#222222] justify-center p-0 ">
       <div className="max-w-full text-center items-center ">
         <img className="w-auto max-h-96 mx-auto" src={logo} alt="logo" />
         <div className="p-2">
           <TypeWriter />
         </div>
-        <div className="flex mt-20 items-center space-x-2 justify-center">
+        <div className="flex mt-2 items-center space-x-2 justify-center">
           <a
             href={instagramURL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 text-2xl cursor-pointer transition-colors hover:text-blue-500"
+            className="text-gray-500 text-2xl cursor-pointer transition-colors hover:text-yellow-500"
           >
             <BsInstagram />
           </a>
@@ -34,7 +34,7 @@ export default function LogoHero({ data }) {
             href={facebookURL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 text-3xl cursor-pointer transition-colors hover:text-blue-500"
+            className="text-gray-500 text-3xl cursor-pointer transition-colors hover:text-yellow-500"
           >
             <RiFacebookBoxLine />
           </a>
@@ -42,7 +42,7 @@ export default function LogoHero({ data }) {
             href={twitterURL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 text-2xl cursor-pointer transition-colors hover:text-blue-500"
+            className="text-gray-500 text-2xl cursor-pointer transition-colors hover:text-yellow-500"
           >
             <RiTwitterXLine />
           </a>
@@ -50,7 +50,7 @@ export default function LogoHero({ data }) {
             href={youtubeURL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 text-4xl cursor-pointer transition-colors hover:text-blue-500"
+            className="text-gray-500 text-4xl cursor-pointer transition-colors hover:text-yellow-500"
           >
             <AiOutlineYoutube />
           </a>
